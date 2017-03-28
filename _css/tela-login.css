@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    position: relative;
+    height: 100vh;
+     background: url('../_imgs/bg.jpg');
+    background-size: 100% 100%;
+
+  }
+  .login{
+  	position: relative;
+  	margin-top: 2%;
+  	text-align: center;
+  	height: 70%;
+  	padding-top: 2%;
+  	padding-bottom: 5%;
+    background: rgba(245, 245, 245, .8);
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+    border-radius: 200px;
+    transition: .5s;
+  }
+  .login:hover{
+    transition: .5s;
+  box-shadow: 0 14px 24px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.40);
+  }
+  .title{
+  margin-top: 5%;
+  }
+  .title h1{
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-top: 0%;
+  font-size: 6rem;
+  text-shadow: 2px 2px rgba(245, 245, 245, .4);
+}
+ .login img{
+ 	margin-bottom: 8%;
+ }
+ .cadastro{
+    position: relative;
+    background: #fff;
+    margin-top: 20%;
+    text-align: center;
+    height: 70%;
+    vertical-align: middle;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.24), 0 2px 3px rgba(0,0,0,0.48);
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+ }
+ .cadastro img{
+  margin-bottom: 5%;
+ }
+ .label{
+  margin: 0;
+  padding: 2%;
+  font-size: 1.6rem;
+  color: #505050;
+  text-align: left;
+ }
+ input{
+  color: #606060;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 100%;
+  outline: 0;
+  background: rgba(245,245,245,0.7);
+  border-radius: 30px;
+  margin-bottom: 5%;
+  border-color: rgba(0,0,0,.3);
+  transition: .5s;
+ }
+ input:focus{
+  transition: .5s;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+ }
+ button{
+  border-radius: 30px;
+  margin-bottom: 5%;
+  border-color: rgba(0,0,0,.3);
+  font-size: 1.6rem;
+  transition: .5s;
+ }
+ .btn-submit{
+  background: #22A7F0;
+  color: #fff;
+  transition: .5s;
+ }
+ .btn-submit:hover{
+  background: #00B16A;
+  transition: .5s;
+ }
+
+
+ .btn-cadastro{
+ background: #f39c12;
+  color: #fff;
+  transition: .5s;
+ }
+ .btn-cadastro:hover{
+    background: #00B16A;
+  transition: .5s;
+ }

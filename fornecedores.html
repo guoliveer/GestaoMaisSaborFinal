@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
+    <link rel="icon" type="img/png" href="_imgs/icon-ice-cream.png">
+    <!-- Essa página ou praticamente copiei a página de cadastro de usuário -->
+    <link rel="stylesheet" type="text/css" href="_css/cadastro.css">
+    <title>+Sabor</title>
+  </head>
+
+  <body>
+    <div class="col-md-12 bg">
+      <div class="col-md-12 tit">
+        <h1>CADASTRO DE FORNECEDORES</h1>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="col-md-12 form">
+          <form name="singup" method="post" action="cadastrandoFor.php">         
+            <label class="col-md-3">NOME: </label><input class="col-md-9" type="text" name="nome" placeholder="Digite o nome do fornecedor">
+            <fieldset class="col-md-12">
+                <legend>ENDEREÇO</legend>
+                <label class="col-md-2 end">RUA: </label><input class="col-md-4" type="text" name="rua" placeholder="Rua do fornecedor">
+                <label class="col-md-2 end">NÚMERO: </label><input class="col-md-4" type="number" name="numero">
+                <label class="col-md-2 end">CIDADE: </label><input class="col-md-4" type="text" name="cidade" placeholder="Município do fornecedor">
+                <label class="col-md-2 end">ESTADO: </label><input class="col-md-4" type="text" name="estado" placeholder="Estado do fornecedor">
+                <legend></legend>
+            </fieldset>
+            <label class="col-md-3">PRODUTO: </label><input class="col-md-9" type="text" name="produto" placeholder="Produto a ser comprado">
+            <label class="col-md-3">CNPJ: </label><input class="col-md-9" type="text" name="cnpj" placeholder="CNPJ do fornecedor">
+
+            <div class="col-md-2"></div>
+            <input class="col-md-8 btn-submit" type="submit" value="CADASTRAR FORNECEDOR">
+            <div class="col-md-2"></div>
+          </form>
+        </div>
+        <div class="col-md-12 btn">
+          <form name="sair" method="post" action="principal.html">
+          <div class="col-md-3"></div>
+          <input class="col-md-3 btn-voltar" type="submit" value="VOLTAR">
+          </form>
+          <form name="listar" method="post" action="listaCad.php">
+          <input class="col-md-3 btn-listar" type="submit" value="FORNECEDORES">
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </body>
+</html>
