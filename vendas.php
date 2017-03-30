@@ -17,26 +17,20 @@
 			<div class="col-md-6">
 				<div class="col-md-12 form">
 					<form name="singup" method="post" action="vendendo.php">	
-				<?
-				include "conexao.php";
-				$query = mysql_query("SELECT id_produto, nome_produto FROM estoque");
-
-				?>
-				 <select>
-				 <option>Selecione...</option>
-				 
-				 <?php while($prod = mysql_fetch_array($query)) { ?>
-				 <option value="<?php echo $prod['id_produto'] ?>"><?php echo $prod['id_produto'] ?></option>
-				 <?php } ?>
-				 
-				 </select>
-
-				</form></div>
 						<label class="col-md-3">Produto: </label>
+						<select name="nome_produto">
+							<option>Selecione um Produto</option>
+							<?php
+								include "conexao.php";
+								$rest=mysql_query("SELECT * FROM estoque");
+								while($row=mysql_fetch_assoc($rest)){?>
+									<option><?php echo $row['nome_produto'];?></option>
+									<?php
+									}
+							?>
+							</select><br><br>
 						<label class="col-md-3">QUANTIDADE: </label><input class="col-md-9" type="text" name="qtd" placeholder="Quantidade">
-						<label class="col-md-3">ID PRODUTO: </label><input class="col-md-9" type="text" name="id_produto" placeholder="Entre com Id do produto">
-						
-						<label class="col-md-3">VALOR UNITARIO: </label><input class="col-md-9" type="real" name="valor" placeholder="valor">
+						<label class="col-md-3">VALOR: </label><input class="col-md-9" type="real" name="valor" placeholder="valor">
 						<label class="col-md-3">VENDEDOR: </label><input class="col-md-9" type="text" name="vendedor" placeholder="Seu nome">
 						<div class="col-md-2"></div>
 						<input class="col-md-8 btn-submit" type="submit" value="VENDA">
