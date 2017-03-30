@@ -33,7 +33,7 @@ echo "<table><tr><td>Nome do Picolé</td>$nbsp<td>Quantidade</td><td>ID</td></tr
 while($escrever=mysql_fetch_array($res)){
 
 /*Escreve cada linha da tabela*/
-echo "<tr><td>" . $escrever['nome'] ."</td><td>" . $escrever['quantidade'] ."&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td><td>" . $escrever['id']."</td></tr>";
+echo "<tr><td>" . $escrever['nome_produto'] ."</td><td>" . $escrever['qtde'] ."&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td><td>" . $escrever['id']."</td></tr>";
 
 }/*Fim do while*/
 
