@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 30-Mar-2017 às 13:59
+-- Generation Time: 05-Abr-2017 às 01:18
 -- Versão do servidor: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -27,13 +27,13 @@ DELIMITER $$
 CREATE DEFINER=`gustavo`@`localhost` PROCEDURE `SP_AtualizaEstoque` (`id_prod` VARCHAR(50), `qtde_comprada` INT, `valor_unit` DECIMAL(9,2))  BEGIN
 declare contador int(11);
 
-    SELECT count(*) into contador FROM estoque WHERE nome_produto = id_prod;
+    SELECT count(*) into contador FROM estoque WHERE nome_produtoE = id_prod;
 
     IF contador > 0 THEN
-        UPDATE estoque SET qtde=qtde + qtde_comprada, valor_unitario= valor_unit
-        WHERE nome_produto = id_prod;
+        UPDATE estoque SET qtdeE=qtdeE + qtde_comprada, valor_unitario= valor_unit
+        WHERE nome_produtoE = id_prod;
     ELSE
-        INSERT INTO estoque (nome_produto, qtde, valor_unitario) values (id_prod, qtde_comprada, valor_unit);
+        INSERT INTO estoque (nome_produtoE, qtdeE, valor_unitario) values (id_prod, qtde_comprada, valor_unit);
     END IF;
 END$$
 
@@ -58,10 +58,10 @@ CREATE TABLE `entrada_produto` (
 --
 
 INSERT INTO `entrada_produto` (`id`, `nome_produto`, `qtde`, `valor_unitario`, `data_entrada`) VALUES
-(1, '', 100, '2.50', NULL),
-(2, '', 100, '2.50', NULL),
-(11, 'chocolate', 100, '2.50', NULL),
-(12, 'chocolate', 20, '1.50', NULL);
+(19, 'Uva', 100, '120.00', '2017-02-03'),
+(18, 'Uva', 250, '1.75', '2017-03-30'),
+(17, 'Morango', 300, '2.50', '2017-03-30'),
+(16, 'Chocolate', 100, '2.50', '2017-03-30');
 
 --
 -- Acionadores `entrada_produto`
@@ -93,9 +93,8 @@ DELIMITER ;
 
 CREATE TABLE `estoque` (
   `id` int(11) NOT NULL,
-  `nome_produto` varchar(45) NOT NULL,
-  `id_produto` int(11) DEFAULT NULL,
-  `qtde` int(11) DEFAULT NULL,
+  `nome_produtoE` varchar(45) NOT NULL,
+  `qtdeE` int(11) DEFAULT NULL,
   `valor_unitario` decimal(9,2) DEFAULT '0.00'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -103,9 +102,10 @@ CREATE TABLE `estoque` (
 -- Extraindo dados da tabela `estoque`
 --
 
-INSERT INTO `estoque` (`id`, `nome_produto`, `id_produto`, `qtde`, `valor_unitario`) VALUES
-(9, 'chocolate', 2, -105, '2.50'),
-(8, 'morango', 1, -301, '50.00');
+INSERT INTO `estoque` (`id`, `nome_produtoE`, `qtdeE`, `valor_unitario`) VALUES
+(16, 'Uva', 250, '2.50'),
+(15, 'Morango', 300, '2.50'),
+(14, 'Chocolate', 100, '2.50');
 
 -- --------------------------------------------------------
 
@@ -175,19 +175,7 @@ CREATE TABLE `saida_produto` (
 --
 
 INSERT INTO `saida_produto` (`id`, `nome_produto`, `qtde`, `data_saida`, `valor_unitario`, `vendedor`) VALUES
-(1, '', 50, NULL, '2.50', 'Gu'),
-(2, '', 50, NULL, '2.50', 'Gu'),
-(3, '', 45, NULL, '2.50', 'gu'),
-(4, 'choc', 120, NULL, '120.00', 'gus'),
-(5, '', 120, NULL, '120.00', 'gt'),
-(6, '', 11, NULL, '11.00', 'gus'),
-(7, '', 222, NULL, '2.00', 'tt'),
-(8, 'Chocolate', 333, NULL, '33.00', 'ww'),
-(9, 'chocolate', 120, NULL, '50.00', 'Gustavo'),
-(10, 'chocolate', 100, NULL, '2.50', 'eu'),
-(11, 'chocolate', 100, NULL, '2.50', 'qqq'),
-(12, 'chocolate', 20, NULL, '2.50', 'as'),
-(13, 'chocolate', 10, NULL, '2.50', 'abc');
+(17, 'Uva', 100, '2017-03-31', '2.50', 'Gustavo');
 
 --
 -- Acionadores `saida_produto`
@@ -220,7 +208,7 @@ DELIMITER ;
 CREATE TABLE `usuarios` (
   `nome` varchar(250) NOT NULL,
   `cpf` varchar(250) NOT NULL,
-  `login` varchar(250) NOT NULL,
+  `login` varchar(45) NOT NULL,
   `senha` varchar(250) NOT NULL,
   `id` int(30) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -230,8 +218,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`nome`, `cpf`, `login`, `senha`, `id`) VALUES
-('Gustavo', '123', 'gu', 'gu', 1),
-('Gustavo Henrique de Oliveira', '3998189832', 'guadm', 'gugu', 4);
+('Gustavo', '333', 'gu', 'gu', 10),
+('gustavo', 'gu', 'gu1', '123', 11),
+('gu', 'gu', 'gu2', '', 12);
 
 --
 -- Indexes for dumped tables
@@ -247,7 +236,7 @@ ALTER TABLE `entrada_produto`
 -- Indexes for table `estoque`
 --
 ALTER TABLE `estoque`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`,`nome_produtoE`);
 
 --
 -- Indexes for table `fornecedor`
@@ -271,7 +260,8 @@ ALTER TABLE `saida_produto`
 -- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `login_UNIQUE` (`login`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -281,12 +271,12 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `entrada_produto`
 --
 ALTER TABLE `entrada_produto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `estoque`
 --
 ALTER TABLE `estoque`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `fornecedor`
 --
@@ -301,12 +291,12 @@ ALTER TABLE `produto`
 -- AUTO_INCREMENT for table `saida_produto`
 --
 ALTER TABLE `saida_produto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

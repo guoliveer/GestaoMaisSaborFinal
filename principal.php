@@ -14,7 +14,7 @@
 			<img src="_imgs/line.png">
 			<li class="parq-nav"><a href="estoque.php">ESTOQUE</a></li>
 			<img src="_imgs/line.png">
-			<li class="pdec-nav"><a href="vendas.html">VENDAS</a></li>
+			<li class="pdec-nav"><a href="vendas.php">VENDAS</a></li>
 			<img src="_imgs/line.png">
 			<li class="espdec-nav"><a href="financas.html">FINANÇAS</a></li>
 			<img src="_imgs/line.png">

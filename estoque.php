@@ -43,10 +43,13 @@ echo "</table>"; /*fecha a tabela apos termino de impressão das linhas*/
 
 
 ?>
-  
+<form name="atualiza" method="post" action="altera.php">
+          <input class="col-md-3 btn-listar" type="submit" value="ATUALIZAR ESTOQUE">
+          </form>
+
 </div>
 <div class="col-md-12 btn">
-					<form name="sair" method="post" action="index.html">
+					<form name="sair" method="post" action="principal.php">
 					<div class="col-md-9"></div>
 					<input class="col-md-3 btn-voltar" type="submit" value="VOLTAR">
 					</form>

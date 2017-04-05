@@ -24,7 +24,7 @@
 								include "conexao.php";
 								$rest=mysql_query("SELECT * FROM estoque");
 								while($row=mysql_fetch_assoc($rest)){?>
-									<option><?php echo $row['nome_produto'];?></option>
+									<option><?php echo $row['nome_produtoE'];?></option>
 									<?php
 									}
 							?>
@@ -38,7 +38,7 @@
 					</form>
 				</div>
 				<div class="col-md-12 btn">
-					<form name="sair" method="post" action="index.html">
+					<form name="sair" method="post" action="principal.php">
 					<div class="col-md-9"></div>
 					<input class="col-md-3 btn-voltar" type="submit" value="VOLTAR">
 					</form>
