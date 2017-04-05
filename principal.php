@@ -16,7 +16,7 @@
 			<img src="_imgs/line.png">
 			<li class="pdec-nav"><a href="vendas.php">VENDAS</a></li>
 			<img src="_imgs/line.png">
-			<li class="espdec-nav"><a href="financas.html">FINANÇAS</a></li>
+			<li class="espdec-nav"><a href="financas.php">FINANÇAS</a></li>
 			<img src="_imgs/line.png">
 			<li class="pcnc-nav"><a href="fornecedores.html">FORNECEDORES</a></li>
 			<img src="_imgs/line.png">

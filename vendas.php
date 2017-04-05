@@ -31,6 +31,7 @@
 							</select><br><br>
 						<label class="col-md-3">QUANTIDADE: </label><input class="col-md-9" type="text" name="qtd" placeholder="Quantidade">
 						<label class="col-md-3">VALOR: </label><input class="col-md-9" type="real" name="valor" placeholder="valor">
+						<label class="col-md-3">DATA SAIDA: </label><input class="col-md-9" type="date" name="data_saida" placeholder="ANO-MES-DIA">
 						<label class="col-md-3">VENDEDOR: </label><input class="col-md-9" type="text" name="vendedor" placeholder="Seu nome">
 						<div class="col-md-2"></div>
 						<input class="col-md-8 btn-submit" type="submit" value="VENDA">
