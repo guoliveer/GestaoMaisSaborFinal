@@ -20,6 +20,8 @@
 			<img src="_imgs/line.png">
 			<li class="pcnc-nav"><a href="fornecedores.html">FORNECEDORES</a></li>
 			<img src="_imgs/line.png">
+			<li class="pcnc-nav"><a href="gis.html">GIS</a></li>
+			<img src="_imgs/line.png">
 			<li class="pcnc-nav"><a href="index.html">SAIR</a></li>
 		</ul>
 	</div>
