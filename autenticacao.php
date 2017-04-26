@@ -1,12 +1,6 @@
 
 <?php
-error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
-$host = "localhost";
-$user = "gustavo";
-$pass = "root";
-$banco = "maissabor";
-$conexao = mysql_connect($host, $user, $pass) or die (mysql_error());
-mysql_select_db($banco) or die(mysql_error());
+include "conexao.php";
 ?>
 <html>
 
@@ -14,7 +8,7 @@ mysql_select_db($banco) or die(mysql_error());
 	<title>Autenticação</title>
 <script type="text/javascript">
 function loginfeito() {
-	setTimeout ("window.location='principal.html'", 3000);
+	setTimeout ("window.location='principal.php'", 3000);
 	}
 
 function loginfailed() {

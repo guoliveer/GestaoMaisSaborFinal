@@ -1,0 +1,46 @@
+.menu{
+	padding: 0;
+	background: url('../_imgs/bg.jpg');
+	background-position: 50% 50%;
+}
+.menu-princ, .lateral-user,.logout{
+	text-align: center;
+	height: 15vh;
+	margin: 0;
+	padding:0;
+	background:rgba(0,0,0,.5);
+}
+.lateral-user, .logout{
+	color: rgba(245,245,245,.8);
+	padding-top: 1%;
+}
+.menu-princ ul{
+	list-style: none;
+	height: 100%;
+	margin-bottom: 2%;
+}
+.menu-princ a{
+	color: rgba(245,245,245,1);
+	transition: .5s;
+
+}
+.menu-princ li{
+	padding-top: 1.5%;
+	height: 100%;
+	transition: .5s;
+}
+.menu-princ li:hover a{
+	text-decoration: none;
+	color: rgba(245,245,245,.5);
+	transition: .5s;
+}
+.logout a{
+	color: rgba(245,245,245,.8);
+	transition: .5s;
+}
+
+.logout a:hover{
+	color: #CF000F;
+	text-decoration: none;
+	transition: .5s;
+}

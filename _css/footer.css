@@ -1,0 +1,13 @@
+.footer{
+	height: 10.5%;
+	margin-top: 3%;
+	padding: 0;
+	background: url('../_imgs/bg.jpg');
+	background-position: 50% 50%;
+}
+.conteudo-1,.conteudo-2{
+	padding-top: 1%; 
+	color: #fff;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+}
