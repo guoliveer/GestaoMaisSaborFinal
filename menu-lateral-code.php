@@ -10,7 +10,7 @@
 			
 			<li class="pdec-nav"><a href="vendas.php">VENDAS</a></li>
 			
-			<li class="espdec-nav"><a href="financas.html">FINANÇAS</a></li>
+			<li class="espdec-nav"><a href="financas.php">FINANÇAS</a></li>
 			
 			<li class="pcnc-nav"><a href="fornecedores.html">FORNECEDORES</a></li>
 			

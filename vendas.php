@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="_css/tela-login.css">
 	<link rel="icon" type="img/png" href="_imgs/icon-ice-cream.png">
+	<link rel="stylesheet" type="text/css" href="_css/cadastro.css">
 	<title>VENDAS</title>
 </head>
 

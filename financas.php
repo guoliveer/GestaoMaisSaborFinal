@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="_css/tela-login.css">
 	<link rel="icon" type="img/png" href="_imgs/icon-ice-cream.png">
+	<link rel="stylesheet" type="text/css" href="_css/cadastro.css">
 	<title>FINANÇAS</title>
 </head>
 <body>
@@ -21,6 +22,10 @@
 		?>
 		
 	</div>
+	<form name="sair" method="post" action="principal.php">
+          <div class="col-md-3"></div>
+          <input class="col-md-3 btn-voltar" type="submit" value="VOLTAR">
+          </form>
 
 </body>
 </html>
