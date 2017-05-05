@@ -12,7 +12,7 @@ function loginfeito() {
 	}
 
 function loginfailed() {
-	setTimeout ("window.location='index.html'", 3000);
+	setTimeout ("window.location='index.php'", 3000);
 	}
 	</script>
 </head>
@@ -30,7 +30,7 @@ if ($row > 0) {
 	echo "<center><img src=\"_imgs/bv2.png\" alt=\"imagem\" /></center>";
 	echo "<script>loginfeito()</script>";
 } else {
-	echo"<script language='javascript' type='text/javascript'>alert('Grupo ou senha inválidos');window.location.href='../beta/index.html'</script>";
+	echo"<script language='javascript' type='text/javascript'>alert('Grupo ou senha inválidos');window.location.href='../beta/index.php'</script>";
 	echo "<script>loginfailed()</script>";
 }
 

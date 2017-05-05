@@ -22,6 +22,7 @@
           </form>
 </div>
 </div>
+
 <?php
 
 
@@ -29,7 +30,6 @@ include "conexao.php";
 error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
 
 $res = mysql_query("SELECT * from estoque order by nome_produtoE asc"); /*Executa o comando SQL, no caso para pegar todos os usuarios do sistema e retorna o valor da consulta em uma variavel ($res)  */
-
 echo "
 	<div class=	'col-md-3'></div>
 	<div class='col-md-6 estoque'>
@@ -49,14 +49,14 @@ echo "
 				echo "<div class='col-md-5 sabor'>".$escrever['data_entrada']."</div>";
 
 			}
-echo "</div>
-	";
+echo "</div>";
 ?>
-<div class="col-md-8 btn">
+<div class="col-md-10 btn">
+					<div class="col-md-10	"> 
 					<form name="sair" method="post" action="principal.php">
-					<input class="col-md-8 btn-voltar" type="submit" value="VOLTAR">
-					</form>
-				</div>
+					<input class="col-md-2 btn-voltar" type="submit" value="VOLTAR">
+					</div>
+					</div>
 
 
 </body>

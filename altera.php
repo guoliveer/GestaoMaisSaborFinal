@@ -5,8 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="_css/tela-login.css">
 	<link rel="icon" type="img/png" href="_imgs/icon-ice-cream.png">
-	<title>CADASTRAR PRODUTO</title>
-</head>
+	<link rel="stylesheet" type="text/css" href="_css/cadastro.css">
+	</head>
 
 <body>
 		<div class="col-md-12 bg">
@@ -38,7 +38,7 @@
 					</form>
 				</div>
 				<div class="col-md-12 btn">
-					<form name="sair" method="post" action="principal.php">
+					<form name="sair" method="post" action="estoque.php">
 					<div class="col-md-9"></div>
 					<input class="col-md-3 btn-voltar" type="submit" value="VOLTAR">
 					</form>
