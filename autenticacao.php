@@ -27,10 +27,10 @@ if ($row > 0) {
 	session_start();
 	$_SESSION['login']=$_POST['login'];
 	$_SESSION['senha']=$_POST['senha'];
-	echo "<center><img src=\"_imgs/bv2.png\" alt=\"imagem\" /></center>";
+	echo "<center><img src=\"_imgs/bv2.gif\" alt=\"imagem\" /></center>";
 	echo "<script>loginfeito()</script>";
 } else {
-	echo"<script language='javascript' type='text/javascript'>alert('Grupo ou senha inválidos');window.location.href='../beta/index.php'</script>";
+	echo"<script language='javascript' type='text/javascript'>alert('Grupo ou senha inválidos');window.location.href='../GestaoMaisSaborFinal/index.php'</script>";
 	echo "<script>loginfailed()</script>";
 }
 

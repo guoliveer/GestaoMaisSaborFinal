@@ -12,7 +12,7 @@
 <body>
 		<div class="col-md-12 bg">
 			<div class="col-md-12 title">
-				<h1>CADASTRO DE VENDAS</h1>
+				<h1>VENDAS</h1>
 			</div>
 			<div class="col-md-3"></div>
 			<div class="col-md-6">

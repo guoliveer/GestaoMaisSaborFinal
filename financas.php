@@ -11,16 +11,17 @@
 <body>
 	<div class="col-md-12 conteudo">
 		<h1>Finanças</h1>
-		<?php
-		include "conexao.php";
 
-		$res= mysql_query("SELECT sum(valor_total) FROM saida_produto WHERE data_saida > '2017/04/01' AND data_saida < '2017/04/31'");
-		while($item = mysql_fetch_array($res)){
-		   echo $item['sum(valor_total)'] .'<br>';
-		}
+		<div class="col-md-12 form">
 		
-		?>
-		
+        <div class="col-md-12">
+	       <form name="financias" method="post" action="listaFinancias.php">              
+                        <label class="col-md-4">Escolha seu intervalo de tempo para verificar o lucro: </label>
+                        <input class="col-md-4" type="date" name="data1">
+                        <input class="col-md-4" type="date" name="data2">
+                        <input class="col-md-8 btn-submit" type="submit" value="VERIFICAR">
+                        </form>
+	</div>
 	</div>
 	<form name="sair" method="post" action="principal.php">
           <div class="col-md-3"></div>
