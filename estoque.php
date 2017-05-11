@@ -41,20 +41,20 @@ echo "
 			}
 ?>
 	
-			<form name="atualiza" method="post" action="altera.php">
+			<form name="atualiza" method="post" action="altera">
 			            <input class="col-md-4 btn-submit" type="submit" value="ATUALIZAR ESTOQUE">
 			            
 			          </form>
-			<form name="cadastrar" method="post" action="cadProduto.php">
+			<form name="cadastrar" method="post" action="cadProduto">
 			          <input class="col-md-4 btn-submit" type="submit" value="CADASTRAR PRODUTO">
 			          </form>
-			<form name="excluir" method="post" action="excluirPro.php">
+			<form name="excluir" method="post" action="excluirPro">
           			<input class="col-md-4 btn-submit" type="submit" value="EXCLUIR PRODUTO">
           			</form>
           	</div>
     <div class="col-md-8"></div>      		
 	<div class="col-md-2"> 
-		<form name="sair" method="post" action="principal.php">
+		<form name="sair" method="post" action="principal">
 			<input class="col-md-12 btn-voltar" type="submit" value="VOLTAR">
 		</div>
 

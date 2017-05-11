@@ -18,7 +18,7 @@
 			</div>
 			<div class="col-md-4"></div>
 			<div class="col-md-4 login">
-				<form method="post" id="flogin" action="autenticacao.php">
+				<form method="post" id="flogin" action="autenticacao">
 					<img id="photo-login" src="_imgs/boss.png">
 					<fieldset id="contato">
 						<div class="col-md-12 login-1">
@@ -35,7 +35,7 @@
 							<p><button type="submit" class="col-md-9 btn-submit">LOGIN</button></p>
 						</div>
 						</form>			
-						<form name="frlogin" method="post" action="cadastro.html">
+						<form name="frlogin" method="post" action="cadastro">
 						<div class="col-md-6">
 							<button type="Cadastro" class="col-md-9 btn-cadastro">CADASTRO</button>
 						</div>

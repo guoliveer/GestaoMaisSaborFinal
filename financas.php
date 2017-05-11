@@ -13,7 +13,7 @@
 				<h1>FINANÇAS</h1>
 		<div class="col-md-3"></div>
 		<div class="col-md-6 form">
-					 <form name="financias" method="post" action="listaFinancias.php">              
+					 <form name="financias" method="post" action="listaFinancias">              
                         <label class="col-md-12">Escolha o intervalo tempo para verificar o lucro: </label><br><br>
                         <input class="col-md-6" type="date" name="data1">
                         <input class="col-md-6" type="date" name="data2">
@@ -24,7 +24,7 @@
 	</div>
 	</div>
 	<div class="col-md-12 btn">
-	<form name="sair" method="post" action="principal.php">
+	<form name="sair" method="post" action="principal">
           <div class="col-md-7"></div>
           <input class="col-md-2 btn-voltar" type="submit" value="VOLTAR">
           </form>

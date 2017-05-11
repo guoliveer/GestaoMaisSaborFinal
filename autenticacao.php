@@ -8,11 +8,11 @@ include "conexao.php";
 	<title>Autenticação</title>
 <script type="text/javascript">
 function loginfeito() {
-	setTimeout ("window.location='principal.php'", 3000);
+	setTimeout ("window.location='principal'", 3000);
 	}
 
 function loginfailed() {
-	setTimeout ("window.location='index.php'", 3000);
+	setTimeout ("window.location='index'", 3000);
 	}
 	</script>
 </head>
@@ -30,7 +30,7 @@ if ($row > 0) {
 	echo "<center><img src=\"_imgs/bv2.gif\" alt=\"imagem\" /></center>";
 	echo "<script>loginfeito()</script>";
 } else {
-	echo"<script language='javascript' type='text/javascript'>alert('Grupo ou senha inválidos');window.location.href='../GestaoMaisSaborFinal/index.php'</script>";
+	echo"<script language='javascript' type='text/javascript'>alert('Grupo ou senha inválidos');window.location.href='../GestaoMaisSaborFinal/index'</script>";
 	echo "<script>loginfailed()</script>";
 }
 

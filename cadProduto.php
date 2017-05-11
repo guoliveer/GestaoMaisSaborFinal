@@ -18,7 +18,7 @@
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<div class="col-md-12 form">
-					<form name="singup" method="post" action="cadastrandoPro.php">		    	
+					<form name="singup" method="post" action="cadastrandoPro">		    	
 						<label class="col-md-3">Nome: </label><input class="col-md-9" type="text" name="nome" placeholder="Digite o Nome do produto">
 						<label class="col-md-3">Quantidade: </label><input class="col-md-9" type="text" name="qte" placeholder="Entre com a quantidade">
 						<label class="col-md-3">Valor: </label><input class="col-md-9" type="text" name="valor" placeholder="Entre com valor do produto">
@@ -29,7 +29,7 @@
 					</form>
 				</div>
 				<div class="col-md-12 btn">
-					<form name="sair" method="post" action="estoque.php">
+					<form name="sair" method="post" action="estoque">
 					<div class="col-md-9"></div>
 					<input class="col-md-3 btn-voltar" type="submit" value="VOLTAR">
 					</form>

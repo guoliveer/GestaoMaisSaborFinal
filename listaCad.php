@@ -11,6 +11,9 @@
   </head>
 
   <body>
+  <div class="col-md-12 title">
+        <h1>LISTA DE FORNECEDORES</h1>
+    </div>
 
 
   <div style="color:white">
@@ -23,35 +26,31 @@ $res = mysql_query("select * from fornecedor"); /*Executa o comando SQL, no caso
 echo "
   <div class= 'col-md-3'></div>
   <div class='col-md-6 fornecedores'>
-    <div class='col-md-3 nome'>
+    <div class='col-md-4 nome'>
       <p>Nome </p>
     </div>
-    <div class='col-md-3 end'>
-      <p>Endereço </p>
-    </div>    
-    <div class='col-md-3 cid'>
+    <div class='col-md-4 cid'>
       <p>Cidade </p>
     </div>
-    <div class='col-md-3 pro'>
+    <div class='col-md-4 pro'>
       <p>Produto </p>
     </div>
      ";
       while($escrever=mysql_fetch_array($res)){
-        echo "<div class='col-md-3 sabor'>".$escrever['nome']."</div>";
-        echo "<div class='col-md-3 sabor'>".$escrever['endereco']."</div>";
-        echo "<div class='col-md-3 sabor'>".$escrever['cidade']."</div>";
-        echo "<div class='col-md-3 sabor'>".$escrever['produto']."</div><div class='col-md-12'></div><br><br>";
+        echo "<div class='col-md-4 sabor'>".$escrever['nome']."</div>";
+        echo "<div class='col-md-4 sabor'>".$escrever['cidade']."</div>";
+        echo "<div class='col-md-4 sabor'>".$escrever['produto']."</div><div class='col-md-12'></div><br><br>";
 
       }
       ?>
       <div class="col-md-12"></div>
       <div class="col-md-7"></div>
-      <form name="novo" method="post" action="fornecedores.html">
+      <form name="novo" method="post" action="fornecedores">
       <input class="col-md-5 btn-submit" type="submit" value="CADASTRAR FORNECEDOR">
       </div>
       </form>
 <div class="col-md-7"></div>
-<form name="Volta" method="post" action="principal.php">
+<form name="Volta" method="post" action="principal">
     <input class="col-md-2 btn-voltar" type="submit" value="voltar">
   </form>
 </div>

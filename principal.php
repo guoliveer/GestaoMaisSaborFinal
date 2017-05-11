@@ -52,17 +52,17 @@
       </div>
       <div class="col-md-9 menu-princ">
       <ul>
-        <li class="col-xs-2 home-nav"><a href="principal.php"><i class="fa fa-home fa-2x"></i><br>HOME</a></li>
-        <li class="col-xs-3 est-nav"><a href="estoque.php"><i class="fa fa-cubes fa-2x" aria-hidden="true"></i><br>ESTOQUE</a></li>
-        <li class="col-xs-2 ven-nav"><a href="vendas.php"><i class="fa fa-credit-card fa-2x" aria-hidden="true""></i><br>VENDAS</a></li>
-        <li class="col-xs-2 fin-nav"><a href="financas.php"><i class="fa fa-money fa-2x" aria-hidden="true"></i><br>FINANÇAS</a></li>
-        <li class="col-xs-3 for-nav"><a href="listaCad.php"><i class="fa fa-users fa-2x"></i><br>FORNECEDORES</a></li>
-      
+        <li class="col-xs-2 home-nav"><a href="principal"><i class="fa fa-home fa-2x"></i><br>HOME</a></li>
+        <li class="col-xs-2 est-nav"><a href="estoque"><i class="fa fa-cubes fa-2x" aria-hidden="true"></i><br>ESTOQUE</a></li>
+        <li class="col-xs-2 ven-nav"><a href="vendas"><i class="fa fa-credit-card fa-2x" aria-hidden="true""></i><br>VENDAS</a></li>
+        <li class="col-xs-2 fin-nav"><a href="financas"><i class="fa fa-money fa-2x" aria-hidden="true"></i><br>FINANÇAS</a></li>
+        <li class="col-xs-2 for-nav"><a href="listaCad"><i class="fa fa-users fa-2x"></i><br>FORNECEDORES</a></li>
+        <li class="col-xs-2 for-nav"><a href="gis"><i class="fa fa-users fa-2x"></i><br>INTELIGÊNCIA</a></li>
 
       </ul>
     </div>
     <div class="col-md-1 logout">
-       <a href="logout.php"><i class="fa fa-user-times fa-2x"></i><br>SAIR</a>
+       <a href="logout"><i class="fa fa-user-times fa-2x"></i><br>SAIR</a>
     </div>
   </div>
 <!-- FIM MENU -->
@@ -72,38 +72,48 @@
 		<h1>GESTÃO +SABOR</h1>
 	</div>	
 	<div class="col-md-12 card">
-		<div class="col-xs-3 card">
-			<a href="estoque.php">
+	<div class="col-md-1"></div>
+		<div class="col-md-2 card">
+			<a href="estoque">
 				<div class="col-xs-12 card-est">
 					<i class="fa fa-cubes fa-2x" aria-hidden="true"></i>
 					<h1>ESTOQUE</h1>
 				</div>
 			</a>
 		</div>
-		<div class="col-xs-3 card">
-			<a href="vendas.php">
+		<div class="col-xs-2 card">
+			<a href="vendas">
 				<div class="col-xs-12 card-ven">
 					<i class="fa fa-credit-card fa-2x" aria-hidden="true""></i>
 					<h1>VENDAS</h1>
 				</div>
 			</a>
 		</div>
-		<div class="col-xs-3 card">
-			<a href="financas.php">
+		<div class="col-xs-2 card">
+			<a href="financas">
 				<div class="col-xs-12 card-fin">
 					<i class="fa fa-money fa-2x" aria-hidden="true"></i>
 					<h1>FINANÇAS</h1>
 				</div>
 			</a>
 		</div>
-		<div class="col-xs-3 card">
-			<a href="listaCad.php">
+		<div class="col-xs-2 card">
+			<a href="listaCad">
 				<div class="col-xs-12 card-for">
 					<i class="fa fa-users fa-2x"></i>
 					<h1>FORNECEDORES</h1>
 				</div>
 			</a>
 		</div>
+		<div class="col-xs-2 card">
+			<a href="listaCad">
+				<div class="col-xs-12 card-gis">
+					<i class="fa fa-users fa-2x"></i>
+					<h1>INTELIGÊNCIA</h1>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-1"></div>
 
 	</div>
 <!-- footer -->

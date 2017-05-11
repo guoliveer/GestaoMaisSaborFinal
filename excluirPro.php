@@ -17,7 +17,7 @@
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<div class="col-md-12 form">
-					<form name="singup" method="post" action="excluindo.php">	
+					<form name="singup" method="post" action="excluindo>	
 						<label class="col-md-3">Produto: </label>
 						<select name="nome_produto">
 							<option>Selecione um Produto</option>
@@ -35,7 +35,7 @@
 					</form>
 				</div>
 				<div class="col-md-12 btn">
-					<form name="sair" method="post" action="estoque.php">
+					<form name="sair" method="post" action="estoque">
 					<div class="col-md-7"></div>
 					<input class="col-md-2 btn-voltar" type="submit" value="VOLTAR">
 					</form>
