@@ -24,7 +24,7 @@
 						<label class="col-md-3">Valor: </label><input class="col-md-9" type="text" name="valor" placeholder="Entre com valor do produto">
 						<label class="col-md-3">Data Entrada: </label><input class="col-md-9" type="date" name="data">
 						<div class="col-md-2"></div>
-						<input class="col-md-8 btn-submit" type="submit" value="CADASTRAR">
+						<input class="col-md-5 btn-submit" type="submit" value="CADASTRAR">
 						<div class="col-md-2"></div>
 					</form>
 				</div>

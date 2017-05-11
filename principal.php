@@ -56,7 +56,7 @@
         <li class="col-xs-3 est-nav"><a href="estoque.php"><i class="fa fa-cubes fa-2x" aria-hidden="true"></i><br>ESTOQUE</a></li>
         <li class="col-xs-2 ven-nav"><a href="vendas.php"><i class="fa fa-credit-card fa-2x" aria-hidden="true""></i><br>VENDAS</a></li>
         <li class="col-xs-2 fin-nav"><a href="financas.php"><i class="fa fa-money fa-2x" aria-hidden="true"></i><br>FINANÇAS</a></li>
-        <li class="col-xs-3 for-nav"><a href="fornecedores.html"><i class="fa fa-users fa-2x"></i><br>FORNECEDORES</a></li>
+        <li class="col-xs-3 for-nav"><a href="listaCad.php"><i class="fa fa-users fa-2x"></i><br>FORNECEDORES</a></li>
       
 
       </ul>
@@ -97,7 +97,7 @@
 			</a>
 		</div>
 		<div class="col-xs-3 card">
-			<a href="fornecedores.html">
+			<a href="listaCad.php">
 				<div class="col-xs-12 card-for">
 					<i class="fa fa-users fa-2x"></i>
 					<h1>FORNECEDORES</h1>

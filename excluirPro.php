@@ -29,15 +29,15 @@
 									<?php
 									}
 							?>
-							</select><br><br></div>
-						<input class="col-md-8 btn-submit" type="submit" value="EXCLUIR">
+							</select><br><br>
+						<input class="col-md-4 btn-submit" type="submit" value="EXCLUIR"></div>
 						<div class="col-md-2"></div>
 					</form>
 				</div>
 				<div class="col-md-12 btn">
 					<form name="sair" method="post" action="estoque.php">
-					<div class="col-md-9"></div>
-					<input class="col-md-3 btn-voltar" type="submit" value="VOLTAR">
+					<div class="col-md-7"></div>
+					<input class="col-md-2 btn-voltar" type="submit" value="VOLTAR">
 					</form>
 				</div>
 			</div>

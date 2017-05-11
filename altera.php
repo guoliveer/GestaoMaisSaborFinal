@@ -33,7 +33,7 @@
 						<label class="col-md-3">VALOR: </label><input class="col-md-9" type="real" name="valor" placeholder="valor">
 						<label class="col-md-3">DATA ENTRADA: </label><input class="col-md-9" type="date" name="data_entrada" placeholder="ANO-MES-DIA">
 						<div class="col-md-2"></div>
-						<input class="col-md-8 btn-submit" type="submit" value="ATULIZAR">
+						<input class="col-md-5 btn-submit" type="submit" value="ATULIZAR">
 						<div class="col-md-2"></div>
 					</form>
 				</div>

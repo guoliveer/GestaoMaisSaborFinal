@@ -6,6 +6,7 @@
     <link rel="icon" type="img/png" href="_imgs/icon-ice-cream.png">
     <!-- Essa página ou praticamente copiei a página de cadastro de usuário -->
     <link rel="stylesheet" type="text/css" href="_css/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="_css/estoque.css">
     <title>+Sabor</title>
   </head>
 
@@ -39,13 +40,19 @@ echo "
         echo "<div class='col-md-3 sabor'>".$escrever['nome']."</div>";
         echo "<div class='col-md-3 sabor'>".$escrever['endereco']."</div>";
         echo "<div class='col-md-3 sabor'>".$escrever['cidade']."</div>";
-        echo "<div class='col-md-3 sabor'>".$escrever['produto']."</div>";
+        echo "<div class='col-md-3 sabor'>".$escrever['produto']."</div><div class='col-md-12'></div><br><br>";
 
       }
-echo "</div>";
-?>
-<form name="Volta" method="post" action="fornecedores.html">
-    <center><input type="submit" value="voltar"></center>
+      ?>
+      <div class="col-md-12"></div>
+      <div class="col-md-7"></div>
+      <form name="novo" method="post" action="fornecedores.html">
+      <input class="col-md-5 btn-submit" type="submit" value="CADASTRAR FORNECEDOR">
+      </div>
+      </form>
+<div class="col-md-7"></div>
+<form name="Volta" method="post" action="principal.php">
+    <input class="col-md-2 btn-voltar" type="submit" value="voltar">
   </form>
 </div>
   </body>

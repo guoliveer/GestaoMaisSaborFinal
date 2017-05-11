@@ -4,24 +4,14 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="_css/estoque.css">
+	<link rel="stylesheet" type="text/css" href="_css/cadastro.css">
 	<link rel="icon" type="img/png" href="_imgs/icon-ice-cream.png">
 	<title>ESTOQUE</title>
 </head>
 <body>
-
-<form name="atualiza" method="post" action="altera.php">
-			<div class="col-md-2"></div>
-            <input class="col-md-3 btn-listar" type="submit" value="ATUALIZAR ESTOQUE">
-            
-          </form>
-<form name="cadastrar" method="post" action="cadProduto.php">
-          <input class="col-md-3 btn-listar" type="submit" value="CADASTRAR PRODUTO">
-          </form>
-<form name="excluir" method="post" action="excluirPro.php">
-          <input class="col-md-3 btn-listar" type="submit" value="EXCLUIR PRODUTO">
-          </form>
-</div>
-</div>
+ <div class="col-md-12 title">
+        <h1>PRODUTOS EM ESTOQUE</h1>
+      </div>
 
 <?php
 
@@ -31,8 +21,8 @@ error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
 
 $res = mysql_query("SELECT * from estoque order by nome_produtoE asc"); /*Executa o comando SQL, no caso para pegar todos os usuarios do sistema e retorna o valor da consulta em uma variavel ($res)  */
 echo "
-	<div class=	'col-md-3'></div>
-	<div class='col-md-6 estoque'>
+	<div class=	'col-md-2'></div>
+	<div class='col-md-8 estoque'>
 		<div class='col-md-5 nome'>
 			<p>Nome do Picolé </p>
 		</div>
@@ -49,14 +39,24 @@ echo "
 				echo "<div class='col-md-5 sabor'>".$escrever['data_entrada']."</div>";
 
 			}
-echo "</div>";
 ?>
-<div class="col-md-10 btn">
-					<div class="col-md-10	"> 
-					<form name="sair" method="post" action="principal.php">
-					<input class="col-md-2 btn-voltar" type="submit" value="VOLTAR">
-					</div>
-					</div>
+	
+			<form name="atualiza" method="post" action="altera.php">
+			            <input class="col-md-4 btn-submit" type="submit" value="ATUALIZAR ESTOQUE">
+			            
+			          </form>
+			<form name="cadastrar" method="post" action="cadProduto.php">
+			          <input class="col-md-4 btn-submit" type="submit" value="CADASTRAR PRODUTO">
+			          </form>
+			<form name="excluir" method="post" action="excluirPro.php">
+          			<input class="col-md-4 btn-submit" type="submit" value="EXCLUIR PRODUTO">
+          			</form>
+          	</div>
+    <div class="col-md-8"></div>      		
+	<div class="col-md-2"> 
+		<form name="sair" method="post" action="principal.php">
+			<input class="col-md-12 btn-voltar" type="submit" value="VOLTAR">
+		</div>
 
 
 </body>
