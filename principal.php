@@ -106,7 +106,7 @@
 			</a>
 		</div>
 		<div class="col-xs-2 card">
-			<a href="listaCad">
+			<a href="gis">
 				<div class="col-xs-12 card-gis">
 					<i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
 					<h1>INTELIGÊNCIA</h1>

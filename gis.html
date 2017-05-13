@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="_css/bootstrap.css">
+      <link rel="icon" type="img/png" href="_imgs/icon-ice-cream.png">
+      <link rel="stylesheet" type="text/css" href="_css/cadastro.css">
+      <!-- Essa página ou praticamente copiei a página de cadastro de usuário -->
+      <link rel="stylesheet" type="text/css" href="_css/estoque.css">
+      <title>+Sabor</title>
+    </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Load a basic WebMap - 4.3</title>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 90%;
+      width: 90%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+
+  <script src="https://js.arcgis.com/4.3/"></script>
+
+  <script>
+    require([
+      "esri/views/MapView",
+      "esri/WebMap",
+      "dojo/domReady!"
+    ], function(
+      MapView, WebMap
+    ) {
+
+      /************************************************************
+       * Creates a new WebMap instance. A WebMap must reference
+       * a PortalItem ID that represents a WebMap saved to
+       * arcgis.com or an on-premise portal.
+       *
+       * To load a WebMap from an on-premise portal, set the portal
+       * url in esriConfig.portalUrl.
+       ************************************************************/
+      var webmap = new WebMap({
+        portalItem: { // autocasts as new PortalItem()
+          id: "a3efa120d6b14b6382eb9e5ee4e1e0cf"
+        }
+      });
+
+      /************************************************************
+       * Set the WebMap instance to the map property in a MapView.
+       ************************************************************/
+      var view = new MapView({
+        map: webmap,
+        container: "viewDiv"
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+
+ <div class="col-md-9"></div>
+  <form name="Volta" method="post" action="principal">
+      <input class="col-md-2 btn-voltar" type="submit" value="voltar">
+    </form>
+
+
+
+
+
+  </body>
+  </html>
