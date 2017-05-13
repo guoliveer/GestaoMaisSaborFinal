@@ -34,9 +34,11 @@ echo "
 		</div>	
 		";
 			while($escrever=mysql_fetch_array($res)){
-				echo "<div class='col-md-5 sabor'>".$escrever['nome_produtoE']."</div>";
-				echo "<div class='col-md-2 sabor'>".$escrever['qtdeE']."</div>";
-				echo "<div class='col-md-5 sabor'>".$escrever['data_entrada']."</div>";
+				echo "<div class='col-md-12 sabor'>";
+				#echo "<hr class='style11'>";
+				echo "<div class='col-md-5  <p>'>".$escrever['nome_produtoE']."</div>";
+				echo "<div class='col-md-2 '>".$escrever['qtdeE']."</div>";
+				echo "<div class='col-md-5 '>".$escrever['data_entrada']."</p></div></div>";
 
 			}
 ?>

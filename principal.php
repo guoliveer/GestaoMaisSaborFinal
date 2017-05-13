@@ -57,7 +57,7 @@
         <li class="col-xs-2 ven-nav"><a href="vendas"><i class="fa fa-credit-card fa-2x" aria-hidden="true""></i><br>VENDAS</a></li>
         <li class="col-xs-2 fin-nav"><a href="financas"><i class="fa fa-money fa-2x" aria-hidden="true"></i><br>FINANÇAS</a></li>
         <li class="col-xs-2 for-nav"><a href="listaCad"><i class="fa fa-users fa-2x"></i><br>FORNECEDORES</a></li>
-        <li class="col-xs-2 for-nav"><a href="gis"><i class="fa fa-users fa-2x"></i><br>INTELIGÊNCIA</a></li>
+        <li class="col-xs-2 for-nav"><a href="gis"><i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i><br>INTELIGÊNCIA</a></li>
 
       </ul>
     </div>
@@ -108,7 +108,7 @@
 		<div class="col-xs-2 card">
 			<a href="listaCad">
 				<div class="col-xs-12 card-gis">
-					<i class="fa fa-users fa-2x"></i>
+					<i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
 					<h1>INTELIGÊNCIA</h1>
 				</div>
 			</a>

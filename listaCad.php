@@ -38,9 +38,12 @@ echo "
     </div>
      ";
       while($escrever=mysql_fetch_array($res)){
-        echo "<div class='col-md-4 sabor'>".$escrever['nome']."</div>";
-        echo "<div class='col-md-4 sabor'>".$escrever['cidade']."</div>";
-        echo "<div class='col-md-4 sabor'>".$escrever['produto']."</div>";
+        echo "<div class='col-md-12 sabor'>"; 
+        #echo "<hr class='style11'>";      
+        echo "<div class='col-md-4 <p>'>".$escrever['nome']."</div>";
+        echo "<div class='col-md-4 '>".$escrever['cidade']."</div>";
+        echo "<div class='col-md-4 '>".$escrever['produto']."</p></div></div>";
+
 
       }
       ?>
@@ -50,7 +53,7 @@ echo "
       <input class="col-md-3 btn-submit" type="submit" value="CADASTRAR FORNECEDOR">
       </div>
       </form>
-<div class="col-md-7"></div>
+<div class="col-md-9"></div>
 <form name="Volta" method="post" action="principal">
     <input class="col-md-2 btn-voltar" type="submit" value="voltar">
   </form>

@@ -22,7 +22,7 @@ body{
 }
 
 .estoque{
-	border-radius: 15px;
+	border-radius: 15px;  
   padding: 5%;
   position: relative;
   margin-top: 2%;
@@ -39,6 +39,21 @@ body{
     transition: .5s;
   box-shadow: 0 14px 24px rgba(0,0,0,0.30), 0 15px 15px rgba(0,0,0,0.40);
   }
+
+
+.sabor:hover {
+	background-color: #87CEEB;
+}
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+}
+
+hr.style11 {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
 
 .fornecedores{
   border-radius: 15px;
@@ -79,6 +94,8 @@ body{
   font-size: 1.6rem;
   transition: .5s;
  }
+
+
 
  .btn-submit{
   background: #22A7F0;
