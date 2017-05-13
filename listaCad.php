@@ -48,7 +48,24 @@ echo "
       }
       ?>
       <div class="col-md-12"></div>
-      <div class="col-md-7"></div>
+      <div class="col-md-2">
+            <form name="singup" method="post" action="excluirFor"> 
+            <label class="col-md-3">Produto: </label>
+            <select name="nome">
+              <option>Selecione um Produto</option>
+              <?php
+                include "conexao.php";
+                $rest=mysql_query("SELECT * FROM fornecedor");
+                while($row=mysql_fetch_assoc($rest)){?>
+                  <option><?php echo $row['nome'];?></option>
+                  <?php
+                  }
+              ?>
+              </select><br><br>
+            <input class="col-md-8 btn-submit" type="submit" value="EXCLUIR"></div>
+            <div class="col-md-1"></div>
+          </form>
+      <div class="col-md-4"></div>
       <form name="novo" method="post" action="fornecedores">
       <input class="col-md-3 btn-submit" type="submit" value="CADASTRAR FORNECEDOR">
       </div>
