@@ -18,8 +18,8 @@ $data=$_POST['data_saida'];
 $valor=$_POST['valor'];
 $valor_total=$qtd*$valor;
 $vendedor=$_POST['vendedor'];
-if ($nome=='' or $qtd=='' or $valor=='' or $dat) {
-	echo"<script language='javascript' type='text/javascript'>alert('FAVOR PREENCHER TODOS OS CAMPOS');window.location.href='../GestaoMaisSaborFinal/vendas'</script>";
+if ($nome=='Selecione um Produto' or $qtd=='' or $valor=='' or $dat) {
+	echo"<script language='javascript' type='text/javascript'>alert('<<FAVOR PREENCHER TODOS OS CAMPOS>>');window.location.href='../GestaoMaisSaborFinal/vendas'</script>";
 	echo "<script>vazio()</script>";
 }else{
 	echo"<div class='col-md-12 title'>

@@ -22,14 +22,14 @@
 							<option>Selecione um Produto</option>
 							<?php
 								include "conexao.php";
-								$rest=mysql_query("SELECT * FROM estoque");
+								$rest=mysql_query("SELECT * FROM estoque order by nome_produtoE asc");
 								while($row=mysql_fetch_assoc($rest)){?>
 									<option><?php echo $row['nome_produtoE'];?></option>
 									<?php
 									}
 							?>
 							</select><br><br>
-						<label class="col-md-3">QUANTIDADE: </label><input class="col-md-9" type="text" name="qtd" placeholder="Quantidade">
+						<label class="col-md-3">QUANTIDADE: </label><input class="col-md-9" type="number" name="qtd" placeholder="Quantidade">
 						<label class="col-md-3">VALOR: </label><input class="col-md-9" type="real" name="valor" placeholder="valor">
 						<label class="col-md-3">DATA ENTRADA: </label><input class="col-md-9" type="date" name="data_entrada" placeholder="ANO-MES-DIA">
 						<div class="col-md-2"></div>

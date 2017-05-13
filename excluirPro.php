@@ -17,7 +17,7 @@
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<div class="col-md-12 form">
-					<form name="singup" method="post" action="excluindo>	
+					<form name="singup" method="post" action="excluindo">	
 						<label class="col-md-3">Produto: </label>
 						<select name="nome_produto">
 							<option>Selecione um Produto</option>

@@ -22,7 +22,7 @@ $estado=$_POST['estado'];
 $produto=$_POST['produto'];
 $cnpj=$_POST['cnpj'];
 if ($nome=='' or $produto==''){
-	echo"<script language='javascript' type='text/javascript'>alert('FAVOR PREENCHA TODOS OS CAMPOS');window.location.href='../GestaoMaisSaborFinal/fornecedores'</script>";
+	echo"<script language='javascript' type='text/javascript'>alert('<<FAVOR PREENCHA TODOS OS CAMPOS>>');window.location.href='../GestaoMaisSaborFinal/fornecedores'</script>";
 	echo "<script>vazio()</script>";
 }else{
 	$sql = mysql_query("INSERT INTO fornecedor(nome,endereco,rua,numero,cidade,estado,produto,cnpj)

@@ -16,7 +16,7 @@
     </div>
 
 
-  <div style="color:white">
+  <div style="color:black">
   <?php
 
 include "conexao.php";
@@ -24,29 +24,30 @@ include "conexao.php";
 
 $res = mysql_query("select * from fornecedor"); /*Executa o comando SQL, no caso para pegar todos os usuarios do sistema e retorna o valor da consulta em uma variavel ($res)  */
 echo "
-  <div class= 'col-md-3'></div>
-  <div class='col-md-6 fornecedores'>
-    <div class='col-md-4 nome'>
+  <div class= 'col-md-1'></div>
+  <div class='col-md-10 fornecedores'>
+  <div class= 'col-md-1'></div>
+    <div class='col-md-2 nome'>
       <p>Nome </p>
     </div>
-    <div class='col-md-4 cid'>
+    <div class='col-md-6 cid'>
       <p>Cidade </p>
     </div>
-    <div class='col-md-4 pro'>
+    <div class='col-md-2 pro'>
       <p>Produto </p>
     </div>
      ";
       while($escrever=mysql_fetch_array($res)){
         echo "<div class='col-md-4 sabor'>".$escrever['nome']."</div>";
         echo "<div class='col-md-4 sabor'>".$escrever['cidade']."</div>";
-        echo "<div class='col-md-4 sabor'>".$escrever['produto']."</div><div class='col-md-12'></div><br><br>";
+        echo "<div class='col-md-4 sabor'>".$escrever['produto']."</div>";
 
       }
       ?>
       <div class="col-md-12"></div>
       <div class="col-md-7"></div>
       <form name="novo" method="post" action="fornecedores">
-      <input class="col-md-5 btn-submit" type="submit" value="CADASTRAR FORNECEDOR">
+      <input class="col-md-3 btn-submit" type="submit" value="CADASTRAR FORNECEDOR">
       </div>
       </form>
 <div class="col-md-7"></div>

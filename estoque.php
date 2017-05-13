@@ -40,10 +40,9 @@ echo "
 
 			}
 ?>
-	
+			<div class="col-md-12"></div>
 			<form name="atualiza" method="post" action="altera">
-			            <input class="col-md-4 btn-submit" type="submit" value="ATUALIZAR ESTOQUE">
-			            
+			            <input class="col-md-4 btn-submit" type="submit" value="ATUALIZAR ESTOQUE">			            
 			          </form>
 			<form name="cadastrar" method="post" action="cadProduto">
 			          <input class="col-md-4 btn-submit" type="submit" value="CADASTRAR PRODUTO">

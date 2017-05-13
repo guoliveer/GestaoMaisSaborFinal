@@ -19,8 +19,8 @@ $qt = mysql_query("SELECT qtdeE FROM estoque WHERE nome_produtoE='$nome'");
 $qtd=$_POST['qtd'];
 $data=$_POST['data_entrada'];
 $valor=$_POST['valor'];
-if ($nome=='' or $qtd==''){
-	echo"<script language='javascript' type='text/javascript'>alert('FAVOR PREENCHER TODOS OS CAMPOS');window.location.href='../GestaoMaisSaborFinal/altera'</script>";
+if ($nome=='Selecione um Produto' or $qtd==''){
+	echo"<script language='javascript' type='text/javascript'>alert('<<FAVOR PREENCHER TODOS OS CAMPOS>>');window.location.href='../GestaoMaisSaborFinal/altera'</script>";
 	echo "<script>vazio()</script>";
 }else{
 	echo"<div class='col-md-12 title'>
