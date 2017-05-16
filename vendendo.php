@@ -18,9 +18,13 @@ $data=$_POST['data_saida'];
 $valor=$_POST['valor'];
 $valor_total=$qtd*$valor;
 $vendedor=$_POST['vendedor'];
-if ($nome=='Selecione um Produto' or $qtd=='' or $valor=='' or $dat) {
+$rest=mysql_query("SELECT * FROM estoque WHERE nome_produtoE = '$nome'");
+while($row=mysql_fetch_assoc($rest)){
+if ($nome=='Selecione um Produto' or $qtd=='' or $valor=='') {
 	echo"<script language='javascript' type='text/javascript'>alert('<<FAVOR PREENCHER TODOS OS CAMPOS>>');window.location.href='../GestaoMaisSaborFinal/vendas'</script>";
 	echo "<script>vazio()</script>";
+}else if ($qtd > $row['qtdeE']){
+	echo"<script language='javascript' type='text/javascript'>alert('<<VOCÊ NÃO DISPÕE DESSA QUANTIA NO ESTOQUE>>');window.location.href='../GestaoMaisSaborFinal/vendas'</script>";
 }else{
 	echo"<div class='col-md-12 title'>
         <h1>VENDA REGISTRADA</h1>
@@ -29,9 +33,10 @@ $sql = mysql_query("INSERT INTO saida_produto(nome_produto, qtde, valor_total, d
 VALUES('$nome','$qtd', '$valor_total', '$data','$vendedor')");
 echo "<center><img src=\"_imgs/ok6.png\" alt=\"imagem\" /></center>";
 }
+}	
 ?>
 <script type="text/javascript">
-	setTimeout ("window.location='vendas'", 1000);
+	setTimeout ("window.location='vendas'", 4000);
 	</script>
 
 </html>
