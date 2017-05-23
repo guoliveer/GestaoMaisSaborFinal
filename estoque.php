@@ -37,7 +37,14 @@ echo "
 				echo "<div class='col-md-12 sabor'>";
 				echo "<div class='col-md-5  <p>'>".$escrever['nome_produtoE']."</div>";
 				echo "<div class='col-md-2 '>".$escrever['qtdeE']."</div>";
-				echo "<div class='col-md-5 '>".$escrever['data_entrada']."</p></div></div>";
+				echo "<div class='col-md-5 '>".$escrever['data_entrada']."</p>";
+				$prodId=$escrever['id'];
+				echo"<form method='post' action='exclui-registros.php' id='form' name='form'>
+                    	<input style= 'position:absolute; background:url(_imgs/exclui.png); background-repeat: no-repeat; border:none; top:0vh; right:-5vw; padding-left: 0%; color: rgba(0,0,0,.0)' value='$prodId' type='submit' name='exclui'> 
+                     </form>
+                    </div>
+                </div>";
+
 
 			}
 ?>
