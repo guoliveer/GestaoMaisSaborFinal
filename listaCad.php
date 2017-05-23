@@ -50,9 +50,9 @@ echo "
       <div class="col-md-12"></div>
       <div class="col-md-2">
             <form name="singup" method="post" action="excluirFor"> 
-            <label class="col-md-3">Produto: </label>
+            <label class="col-md-3">Fornecedor: </label>
             <select name="nome">
-              <option>Selecione um Produto</option>
+              <option>Selecione um Fornecedor</option>
               <?php
                 include "conexao.php";
                 $rest=mysql_query("SELECT * FROM fornecedor");
