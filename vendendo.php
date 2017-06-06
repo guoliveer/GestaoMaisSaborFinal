@@ -19,11 +19,12 @@ $valor=$_POST['valor'];
 $valor_total=$qtd*$valor;
 $vendedor=$_POST['vendedor'];
 $rest=mysql_query("SELECT * FROM estoque WHERE nome_produtoE = '$nome'");
-while($row=mysql_fetch_assoc($rest)){
 if ($nome=='Selecione um Produto' or $qtd=='' or $valor=='') {
 	echo"<script language='javascript' type='text/javascript'>alert('<<FAVOR PREENCHER TODOS OS CAMPOS>>');window.location.href='../GestaoMaisSaborFinal/vendas'</script>";
 	echo "<script>vazio()</script>";
-}else if ($qtd > $row['qtdeE']){
+}
+while($row=mysql_fetch_assoc($rest)){
+if ($qtd > $row['qtdeE']){
 	echo"<script language='javascript' type='text/javascript'>alert('<<VOCÊ NÃO DISPÕE DESSA QUANTIA NO ESTOQUE>>');window.location.href='../GestaoMaisSaborFinal/vendas'</script>";
 }else{
 	echo"<div class='col-md-12 title'>
